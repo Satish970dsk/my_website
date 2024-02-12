@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* ------------ header section ------------- */
+#header{
+    width:100%;
+    height: 100vh;
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    margin: 20px 30px;
+    cursor: pointer;
+}
+.logo h1{
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    color:orangered;
+}
+.navbar ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    position: relative;
+   
+}
+.navbar ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+.search{
+    width: 400px;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid orangered;
+}
+   /* -----------header in side content ---------- */
+.content{
+    margin-top: 114px;
+    margin-right: 40px;
+    display: flex;
+}
+.content h1{
+  padding-top: 50px;
+  padding-bottom: 20px; 
+  color:#ff4469;
+}
+.content p{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+/* -------------- about section ----------- */
+#about{
+    margin:50px 100px;
+}
+.about h2{
+    text-align: center;
+}
+.about h2{
+    margin-top: 15px;
+    padding-bottom: 15px;
+    color: orangered;
+    font-weight: 800;
+    border-radius: 1px solid black;
+   
+}
+.about p{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.about ul{
+    margin-left: 460px;
+}
+.about ul li{
+    margin: 10px;
+    list-style: none;
+}
+.about ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+.about ul li a:hover{
+    color: rgb(222, 34, 34);
+}
+/* -------------- footer section ------------ */
+.footer{
+    margin-top: 50px;
+}
+.footer p{
+    padding: 30px;
+}
+/* --------------- services page --------------- */
+.head{
+    margin: 70px;
+    margin-left: 120px;
+    box-shadow: 0 3px 10px orangered;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    color: rgb(255, 0, 0);
+}
+.services{
+    display: flex;
+    margin: 60px;
+
+}
+.services div{
+    margin-left: 40px;
+    background:transparent;
+    box-shadow: 0px 3px 15px #ffd6d6;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.5s,transform 0.5s;
+}
+.services div:hover{
+    background: #10ffe3;
+    transform: translateY(-10px);
+    
+}
+.services div h2{
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    padding-bottom: 5px;
+
+}
+.services div p{
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+/* ------------ contact us page --------- */
+.form{
+    margin-top: 50px;
+    margin-left: 400px;
+    width: 480px;
+    height: 350px;
+    border: 1px solid orangered;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 3px 15px #ff5577;
+}
+.form h2{
+    text-align: center;
+    color:orangered;
+    padding-bottom: 15px;
+}
+.form input{
+  
+   width: 85%;
+   padding: 6px;
+   border-radius: 20px;
+   outline: none;
+   border: 1px solid orangered;
+   padding-left: 20px;
+   margin-left: 20px;
+}
+.form label{
+    padding-left: 20px;
+    color: black;
+    font-size: large;
+
+}
+.btn{
+    margin: 20px;
+    margin-right: 80px;
+    margin-left: 30px;
+    padding: 7px;
+    width: 100px;
+    background: rgb(220, 188, 8);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color:black
+
+}
+.btn1{
+    background: rgb(199, 5, 5);
+    color: white;
+    
+}
+.btn:hover{
+    background: gold;
+}
+.btn1:hover{
+    background:red;
+}
